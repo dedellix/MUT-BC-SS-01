@@ -1,0 +1,12 @@
+[ req ]
+distinguished_name = dn
+prompt = no
+
+[ dn ]
+CN = Mutant Intermediate
+
+[ v3_leaf ]
+basicConstraints = critical, CA:FALSE
+keyUsage = critical, keyCertSign, cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer

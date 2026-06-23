@@ -1,0 +1,12 @@
+[ req ]
+distinguished_name = dn
+prompt = no
+
+[ dn ]
+CN = Test Root CA
+
+[ v3_ca ]
+basicConstraints = critical, CA:TRUE
+keyUsage = critical, keyCertSign, cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always
