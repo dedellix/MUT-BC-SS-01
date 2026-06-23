@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 set -e
@@ -68,5 +67,3 @@ echo
 echo "========================================"
 echo " Prerequisites successfully installed"
 echo "========================================"
-```
-
