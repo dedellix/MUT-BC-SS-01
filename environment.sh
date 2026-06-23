@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export OPENSSL111H=/home/vagrant/openssl-1.1.1h-install/bin/openssl
-export LD_LIBRARY_PATH=/home/vagrant/openssl-1.1.1h-install/lib:/home/vagrant/openssl-1.1.1h-install/lib:
+export OPENSSL111H=$HOME/openssl-1.1.1h-install/bin/openssl
 
-echo "[+] OpenSSL version:"
- version
+export LD_LIBRARY_PATH=$HOME/openssl-1.1.1h-install/lib:$LD_LIBRARY_PATH
 
-echo "[+] Libraries:"
-ldd 
+echo "Using:"
+$OPENSSL111H version
+
+ldd $OPENSSL111H 
